@@ -1,50 +1,72 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Muskan - SPS Dashboard</title>
+<title>Muskan - ST JUDE'S ACADEMY</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
-body{background:#eef2f7}
-.top{background:#1e3a8a;color:#fff;padding:14px 20px;display:flex;justify-content:space-between}
-.card{background:#fff;margin:12px;border-radius:16px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
-.profile{display:flex;gap:14px;align-items:center}
-.profile img{width:85px;height:85px;border-radius:50%;object-fit:cover;border:3px solid #1e3a8a}
-.badge{background:#2563eb;color:#fff;padding:4px 10px;border-radius:20px;font-size:12px}
-.addr{font-size:13px;color:#555;margin-top:4px}
-.bar{height:10px;background:#e5e7eb;border-radius:10px;margin-top:8px}
-.fill{width:92.5%;height:10px;background:#22c55e;border-radius:10px}
+body{background:#f1f5f9;display:flex;min-height:100vh}
+.sidebar{width:220px;background:#0f172a;color:#fff;padding:15px}
+.sidebar h2{font-size:16px;margin:15px 0 20px 5px}
+.menu{list-style:none}
+.menu li{padding:10px 12px;border-radius:8px;margin-bottom:6px;font-size:14px}
+.menu li.active{background:#2563eb}
+.main{flex:1;padding:15px}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;flex-wrap:wrap;gap:10px}
+.profile-card{background:#fff;padding:10px 15px;border-radius:12px;display:flex;gap:10px;align-items:center;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+.profile-card img{width:45px;height:45px;border-radius:50%;object-fit:cover}
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px}
+.card{background:#fff;border-radius:12px;padding:12px;box-shadow:0 2px 6px rgba(0,0,0,.06);font-size:13px}
+.bar{height:8px;background:#e5e7eb;border-radius:10px;margin-top:6px}
+.fill{height:8px;background:#22c55e;border-radius:10px;width:92.5%}
+.courses{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;margin-top:15px}
+.course{padding:15px;border-radius:12px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}.courses{grid-template-columns:1fr 1fr}.sidebar{display:none}}
 </style>
 </head>
 <body>
 
-<div class="top"><b>SPS SAHARANPUR</b><span>🔔 Muskan | BCA</span></div>
+<div class="sidebar">
+<h2>📘 ST JUDE'S ACADEMY</h2>
+<ul class="menu">
+<li class="active">🏠 Dashboard</li>
+<li>👤 Profile</li>
+<li>📚 Courses</li>
+<li>📅 Schedule</li>
+<li>📊 Attendance</li>
+<li>📈 Results</li>
+<li>📝 Assignments</li>
+<li>💳 Fees</li>
+<li>🎉 Events</li>
+</ul>
+</div>
 
-<div class="card profile">
-<img src="muskan.jpg">
-<div>
-<h2>Muskan</h2>
-<span class="badge">BCA • Final Year</span>
-<p class="addr">📍 SPS Saharanpur</p>
-<p class="addr"><b>Address:</b> Near Clock Tower, Saharanpur, UP - 247001</p>
-<!-- Yaha apna full address likh do -->
+<div class="main">
+<div class="header">
+<div><h3>STUDENT DASHBOARD</h3><p>Welcome back, Muskan!</p></div>
+<div class="profile-card">
+<img src="muskan.jpg" onerror="this.src='https://i.pravatar.cc/100?u=muskan'">
+<div><b>Muskan</b><br><small>Class BCA • Saharanpur</small><br><small>📍 Saharanpur, UP 247001</small></div>
 </div>
 </div>
 
-<div class="card">
-<b>Attendance - 92.5% ✅</b>
-<div class="bar"><div class="fill"></div></div>
-<small>Present: 74 / Total: 80 classes</small>
+<div class="grid">
+<div class="card"><h3>Upcoming Classes</h3><p>📘 English - 10:00 AM<br><small>Room 102</small></p><br><p>🎓 Maths - 11:30 AM<br><small>Room 201</small></p></div>
+<div class="card"><h3>Today's Assignments</h3><p>📄 History Essay<br><small>Due 5 PM</small></p><br><p>⚙️ Science Project<br><small>Due 8 PM</small></p></div>
+<div class="card"><h3>Weekly Attendance - 92.5%</h3><div class="bar"><div class="fill"></div></div><br><p style="text-align:center;color:#22c55e;font-size:20px"><b>92.5%</b><br><small>Excellent</small></p></div>
+<div class="card"><h3>Calendar - October 2024</h3><p style="font-size:11px">S M T W T F S<br>6 7 8 9 10 11 12<br>13 14 15 16 17 18 19<br><b style="background:#2563eb;color:#fff;padding:2px 5px;border-radius:50%">21</b> 22 23 24 25 26</p></div>
 </div>
 
-<div class="card">
-<h3>STUDENT DASHBOARD</h3>
-<p>Welcome back, Muskan ❤️</p>
-<p>Name: <b>Muskan</b></p>
-<p>College: SPS Saharanpur</p>
-<p>Course: BCA Final Year</p>
+<h3 style="margin:15px 5px">Current Courses</h3>
+<div class="courses">
+<div class="course" style="background:#93c5fd"><b>Data Structures</b><br><br><small>70% Complete</small></div>
+<div class="course" style="background:#86efac"><b>English Communication</b><br><br><small>45% Complete</small></div>
+<div class="course" style="background:#c4b5fd"><b>Discrete Maths</b><br><br><small>60% Complete</small></div>
+<div class="course" style="background:#fdba74"><b>Computer Fundamentals</b><br><br><small>85% Complete</small></div>
 </div>
 
+</div>
 </body>
 </html>
