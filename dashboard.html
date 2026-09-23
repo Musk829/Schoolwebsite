@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPS Dashboard</title>
+<style>
+*{margin:0;font-family:Arial}
+body{background:#f3e5f5;display:flex}
+.sidebar{width:200px;background:linear-gradient(180deg,#6a1b9a,#ce93d8);color:white;min-height:100vh;padding:20px}
+.sidebar h2{font-size:18px;margin-bottom:20px;border-bottom:1px solid #fff;padding-bottom:10px}
+.sidebar p{margin:12px 0}
+.sidebar a{color:white;text-decoration:none;display:block;padding:10px;background:rgba(255,255,255,0.2);border-radius:8px;margin-top:20px;text-align:center}
+.main{flex:1;padding:20px}
+.top{font-size:20px;color:#4a148c;font-weight:bold;margin-bottom:20px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.box{background:white;border-radius:12px;padding:20px;border-left:6px solid #8e24aa;box-shadow:0 3px 8px #ccc}
+.box h3{font-size:12px;color:grey}
+.box h1{color:#4a148c;margin-top:8px}
+.list{margin-top:25px;background:white;border-radius:12px;padding:15px;box-shadow:0 3px 8px #ccc}
+</style>
+</head>
+<body>
+<div class="sidebar">
+<h2>🏫 SPS Saharanpur</h2>
+<p>📊 Dashboard</p>
+<p>👨‍🎓 Students</p>
+<p>👩‍🏫 Staff</p>
+<a href="index.html">⬅ Home</a>
+</div>
+<div class="main">
+<div class="top">Hello Muskan - Your Dashboard</div>
+<div class="cards">
+<div class="box"><h3>TOTAL STUDENTS</h3><h1>612</h1></div>
+<div class="box" style="border-color:#ff4081"><h3>PRESENT TODAY</h3><h1>589</h1></div>
+<div class="box" style="border-color:#00bcd4"><h3>TEACHERS</h3><h1>24</h1></div>
+<div class="box" style="border-color:orange"><h3>PENDING FEES</h3><h1>₹18k</h1></div>
+</div>
+<div class="list">
+<h3 style="color:#4a148c;margin-bottom:10px">Recent Admissions</h3>
+<p>✅ Aarav - Class 10th</p>
+<p>✅ Priya - BCA 2nd Year</p>
+<p>⏳ Rohan - Class 12th</p>
+</div>
+</div>
+</body>
+</html>
