@@ -1,1 +1,87 @@
-<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"><title>SPS - Student Dashboard</title><style>*{margin:0;box-sizing:border-box;font-family:Arial}body{background:#f5f7fb;display:flex;min-height:100vh}.side{width:210px;background:#fff;border-right:1px solid #e5e7eb;padding:14px}.logo{display:flex;gap:8px;font-weight:800;color:#1e1b4b;padding:8px}.logo span{background:#1e40af;color:#fff;width:32px;height:32px;display:grid;place-items:center;border-radius:8px}.side a{display:flex;gap:10px;padding:10px 12px;border-radius:10px;text-decoration:none;color:#374151;font-size:13px;margin:3px 0}.side a.active{background:#2563eb;color:white}.main{flex:1;padding:14px}.top{display:flex;justify-content:space-between;align-items:center;background:#fff;padding:12px 16px;border-radius:12px;border:1px solid #e5e7eb}.grid{display:grid;grid-template-columns:1fr 1fr 300px;gap:12px;margin-top:12px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:12px}.card h3{font-size:13px;margin-bottom:10px}.mini{border:1px solid #e5e7eb;border-radius:10px;padding:8px;margin:6px 0;font-size:12px}.bar{height:10px;background:#e5e7eb;border-radius:20px;display:flex;overflow:hidden;margin:8px 0}@media(max-width:900px){.grid{grid-template-columns:1fr}.side{display:none}}</style></head><body><div class="side"><div class="logo"><span>SPS</span>SPS SAHARANPUR</div><a class="active">🏠 Dashboard</a><a>👤 Profile</a><a>📚 Courses</a><a>🗓 Schedule</a><a>📍 Attendance</a><a>📄 Results</a><a>📝 Assignments</a><a>💳 Fees</a><a href="index.html" style="margin-top:20px;border:1px solid #ddd;display:flex;gap:10px;padding:10px 12px;border-radius:10px;text-decoration:none;color:#374151;font-size:13px">⬅ Home</a></div><div class="main"><div class="top"><div><b>STUDENT DASHBOARD</b><p style="font-size:12px;color:#6b7280">Welcome back, Muskan!</p></div><div style="display:flex;align-items:center;gap:8px;font-size:13px"><img src="https://i.pravatar.cc/32" style="border-radius:50%"><b>Muskan<br><span style="font-weight:400;font-size:11px">BCA Final Year</span></b></div></div><div class="grid"><div class="card"><h3>Upcoming Classes</h3><div class="mini">📘 English - 10:00 AM<br><small>Room 102</small></div><div class="mini">🎓 Maths - 11:30 AM<br><small>Room 201</small></div></div><div class="card"><h3>Today's Assignments</h3><div class="mini">📄 History Essay - Due 5 PM</div><div class="mini">⚙️ Science Project - Due 8 PM</div></div><div class="card"><h3>Notifications</h3><div style="font-size:12px;line-height:1.8">🔔 <b>Fees Due</b><br><small>Fees at 10:30 PM</small><br>📘 <b>Exam Schedule</b></div></div><div class="card"><h3>Weekly Attendance - 92.5% Present</h3><div class="bar"><div style="width:92%;background:#22c55e"></div><div style="width:8%;background:#f59e0b"></div></div></div><div class="card"><h3>Current Courses</h3><p style="font-size:12px">English 80% | Maths 70% | Science 85%</p></div><div class="card"><h3>Calendar - Oct 2024</h3><p style="font-size:12px;text-align:center;margin-top:10px">📅 21 - Today Selected</p></div></div></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>St. Jude's Academy - Student Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#f6f7fb;display:flex;min-height:100vh}
+.sidebar{width:230px;background:#fff;border-right:1px solid #eef0f5;padding:18px 12px}
+.logo{display:flex;align-items:center;gap:10px;padding:4px 8px 18px 8px}
+.logo-icon{width:38px;height:38px;background:#0b2a5b;border-radius:10px;display:grid;place-items:center;color:#facc15;font-weight:800;font-size:13px;border:2px solid #facc15}
+.logo-text{font-weight:800;font-size:14px;line-height:1.1;color:#111827}
+.menu a{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:10px;text-decoration:none;color:#4b5563;font-size:14px;font-weight:500;margin:2px 0}
+.menu a.active{background:#2563eb;color:#fff}
+.main{flex:1;padding:18px 22px;overflow:auto}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.topbar h2{font-size:18px;font-weight:800;color:#111827;letter-spacing:-0.2px}
+.topbar p{font-size:13px;color:#6b7280;margin-top:2px}
+.search{display:flex;align-items:center;gap:12px}
+.search-box{background:#fff;border:1px solid #e5e7eb;border-radius:20px;padding:8px 14px;width:280px;display:flex;align-items:center;justify-content:space-between;color:#9ca3af;font-size:13px}
+.profile{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #eef0f5;padding:6px 10px;border-radius:28px}
+.profile img{width:32px;height:32px;border-radius:50%}
+.profile b{font-size:12px;line-height:1.1}
+.profile span{font-size:10px;color:#6b7280;font-weight:400}
+.grid{display:grid;grid-template-columns:1fr 1fr 320px;gap:14px}
+.card{background:#fff;border:1px solid #eef0f5;border-radius:14px;padding:14px;box-shadow:0 1px 2px rgba(0,0,0,0.04)}
+.card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.card-head h3{font-size:13px;font-weight:700}
+.dots{color:#9ca3af;letter-spacing:2px;font-weight:700}
+.item{display:flex;gap:10px;align-items:center;padding:9px 10px;border:1px solid #eef0f5;border-radius:10px;margin-bottom:8px}
+.icon{width:34px;height:34px;background:#f0f6ff;border-radius:8px;display:grid;place-items:center;font-size:16px}
+.item b{font-size:12px}
+.item small{font-size:10px;color:#6b7280}
+.att-bar{height:10px;background:#e5e7eb;border-radius:20px;display:flex;overflow:hidden;margin:10px 0}
+.att-bar div{height:100%}
+.legend{display:flex;justify-content:space-between;font-size:11px;font-weight:600;color:#374151}
+.course-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.course{border:1px solid #eef0f5;border-radius:10px;padding:10px}
+.course b{font-size:11px}
+.course .line{height:5px;background:#e5e7eb;border-radius:10px;margin-top:8px;overflow:hidden}
+.course .fill{height:100%;background:#2563eb}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;font-size:11px;text-align:center;margin-top:10px}
+.cal-grid b{font-size:11px}
+.date{padding:6px;border-radius:8px}
+.date.active{background:#2563eb;color:#fff}
+@media(max-width:1000px){.grid{grid-template-columns:1fr}.sidebar{display:none}.search-box{display:none}}
+</style>
+</head>
+<body>
+<div class="sidebar">
+<div class="logo"><div class="logo-icon">SJA</div><div class="logo-text">ST. JUDE'S<br>ACADEMY</div></div>
+<div class="menu">
+<a class="active">🏠 Dashboard</a>
+<a>👤 Profile</a>
+<a>📚 Courses</a>
+<a>🗓 Schedule</a>
+<a>🎙 Attendance</a>
+<a>📄 Results</a>
+<a>📝 Assignments</a>
+<a>💳 Fees</a>
+<a>📅 Events</a>
+</div>
+</div>
+<div class="main">
+<div class="topbar">
+<div><h2>STUDENT DASHBOARD</h2><p>Welcome back, Aarav!</p></div>
+<div class="search">
+<div class="search-box">Search <span>🔍</span></div>
+<span>🔍</span><span style="position:relative">🔔<span style="position:absolute;top:-6px;right:-6px;background:#ef4444;color:#fff;font-size:8px;padding:2px 4px;border-radius:10px">3</span></span><span>⚙️</span><span>↗️</span>
+<div class="profile"><img src="https://i.pravatar.cc/100?img=8"><div><b>Aarav Sharma<br><span>Photo, Class 8A</span></b></div></div>
+</div>
+</div>
+<div class="grid">
+<div class="card"><div class="card-head"><h3>Upcoming Classes</h3><span class="dots">...</span></div><div class="item"><div class="icon">📘</div><div><b>English - 10:00 AM</b><br><small>Room 102</small></div></div><div class="item"><div class="icon">🎓</div><div><b>Maths - 11:30 AM</b><br><small>Room 201</small></div></div></div>
+<div class="card"><div class="card-head"><h3>Today's Assignments</h3><span class="dots">...</span></div><div class="item"><div class="icon">📄</div><div><b>History Essay</b><br><small>Due 5 PM</small></div><span style="margin-left:auto">›</span></div><div class="item"><div class="icon">⚙️</div><div><b>Science Project</b><br><small>Due 8 PM</small></div><span style="margin-left:auto">›</span></div></div>
+<div class="card"><div class="card-head"><h3>Notifications</h3><span class="dots">...</span></div><div class="item" style="border:none;padding:6px 0"><div class="icon" style="background:#fef3c7">🔔</div><div><b>Fees Due</b><br><small>Fees schedule at 10:30 PM</small></div></div><div class="item" style="border:none;padding:6px 0"><div class="icon" style="background:#dbeafe">📘</div><div><b>Exam Schedule</b><br><small>Exam Schedule at 11:30 PM</small></div></div><div class="item" style="border:none;padding:6px 0"><div class="icon" style="background:#ede9fe">💬</div><div><b>New Message</b><br><small>New Message - new Message</small></div></div></div>
+<div class="card"><div class="card-head"><h3>Weekly Attendance</h3><span class="dots">...</span></div><div class="att-bar"><div style="width:92.5%;background:#22c55e"></div><div style="width:5%;background:#ef4444"></div><div style="width:2.5%;background:#f59e0b"></div></div><div class="legend"><span>92.5% Present</span><span>5% Absent</span><span>2.5% Late</span></div></div>
+<div class="card"><div class="card-head"><h3>Current Courses</h3><span class="dots">...</span></div><div class="course-grid"><div class="course"><b>English</b><div class="line"><div class="fill" style="width:90%"></div></div></div><div class="course"><b>Maths</b><div class="line"><div class="fill" style="width:75%"></div></div></div><div class="course"><b>Science</b><div class="line"><div class="fill" style="width:85%"></div></div></div><div class="course"><b>History</b><div class="line"><div class="fill" style="width:60%"></div></div></div><div class="course"><b>Econ</b><div class="line"><div class="fill" style="width:70%"></div></div></div><div class="course"><b>Art</b><div class="line"><div class="fill" style="width:50%"></div></div></div></div></div>
+<div class="card"><div class="card-head"><h3>Calendar</h3><span class="dots">...</span></div><div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:700"><span>‹</span><span>October 2024</span><span>›</span></div><div style="font-size:9px;margin-top:8px;display:flex;gap:8px"><span>🟢 Events</span><span>🟡 Exams</span><span>🔵 PTM</span><span>🔴 Holidays</span></div><div class="cal-grid"><b>30</b><b>31</b><b>1</b><b>2</b><b>3</b><b>4</b><b>5</b><b>6</b><b>7</b><b>8</b><b>9</b><b>10</b><b>11</b><b>12</b><b>13</b><b>14</b><b>15</b><b>16</b><b>17</b><b>18</b><b>19</b><div class="date">20</div><div class="date active">21</div><div class="date">22</div><div class="date">23</div><div class="date">24</div><div class="date">25</div><div class="date">26</div><div class="date">27</div><div class="date">28</div><div class="date">29</div><div class="date">30</div><div class="date">31</div><div class="date" style="color:#9ca3af">1</div><div class="date" style="color:#9ca3af">2</div></div></div>
+<div class="card"><div class="card-head"><h3>Recent Activity</h3><span class="dots">...</span></div><div class="item" style="border:none"><div class="icon">📄</div><div><b>Maths test score updated</b><br><small>Aug 12, 2024 - updated</small></div></div><div class="item" style="border:none"><div class="icon">✅</div><div><b>English assignment submitted</b><br><small>Aug 13, 2024 - hur ago</small></div></div></div>
+<div class="card" style="grid-column:span 2"><div class="card-head"><h3>Notice Board</h3><span class="dots">...</span></div><b style="font-size:12px">Annual Function Notice</b><p style="font-size:11px;color:#6b7280;margin:2px 0 10px 0">Annual Function Notice</p><b style="font-size:12px">Sports Meet</b><p style="font-size:11px;color:#6b7280">Sports Meet or spoit Meet</p></div>
+</div>
+</div>
+</body>
+                                                                   </html>
