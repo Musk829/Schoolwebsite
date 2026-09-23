@@ -3,70 +3,56 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Muskan - ST JUDE'S ACADEMY</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
-body{background:#f1f5f9;display:flex;min-height:100vh}
-.sidebar{width:220px;background:#0f172a;color:#fff;padding:15px}
-.sidebar h2{font-size:16px;margin:15px 0 20px 5px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f3f6fb;display:flex;min-height:100vh}
+.side{width:210px;background:#fff;border-right:1px solid #e5e7eb;padding:12px}
+.logo{display:flex;gap:8px;align-items:center;font-weight:bold;color:#0b2d5e;margin-bottom:20px}
 .menu{list-style:none}
-.menu li{padding:10px 12px;border-radius:8px;margin-bottom:6px;font-size:14px}
-.menu li.active{background:#2563eb}
-.main{flex:1;padding:15px}
-.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;flex-wrap:wrap;gap:10px}
-.profile-card{background:#fff;padding:10px 15px;border-radius:12px;display:flex;gap:10px;align-items:center;box-shadow:0 2px 6px rgba(0,0,0,.06)}
-.profile-card img{width:45px;height:45px;border-radius:50%;object-fit:cover}
-.grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px}
-.card{background:#fff;border-radius:12px;padding:12px;box-shadow:0 2px 6px rgba(0,0,0,.06);font-size:13px}
-.bar{height:8px;background:#e5e7eb;border-radius:10px;margin-top:6px}
-.fill{height:8px;background:#22c55e;border-radius:10px;width:92.5%}
-.courses{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;margin-top:15px}
-.course{padding:15px;border-radius:12px}
-@media(max-width:800px){.grid{grid-template-columns:1fr}.courses{grid-template-columns:1fr 1fr}.sidebar{display:none}}
+.menu li{padding:10px 12px;border-radius:8px;margin-bottom:4px;font-size:14px;display:flex;gap:8px}
+.menu li.active{background:#2563eb;color:#fff}
+.main{flex:1;padding:14px}
+.top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.card{background:#fff;border-radius:12px;padding:12px;box-shadow:0 2px 6px rgba(0,0,0,.05);font-size:13px}
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:12px}
+.c2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.bar{height:10px;background:#e5e7eb;border-radius:10px;display:flex;overflow:hidden;margin-top:6px}
+.b1{width:92.5%;background:#22c55e}.b2{width:5%;background:#ef4444}.b3{width:2.5%;background:#f59e0b}
+@media(max-width:800px){.side{display:none}.grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-
-<div class="sidebar">
-<h2>📘 ST JUDE'S ACADEMY</h2>
+<div class="side">
+<div class="logo">📘 ST. JUDE'S ACADEMY</div>
 <ul class="menu">
 <li class="active">🏠 Dashboard</li>
-<li>👤 Profile</li>
-<li>📚 Courses</li>
-<li>📅 Schedule</li>
-<li>📊 Attendance</li>
-<li>📈 Results</li>
-<li>📝 Assignments</li>
-<li>💳 Fees</li>
-<li>🎉 Events</li>
+<li>👤 Profile</li><li>📚 Courses</li><li>📅 Schedule</li>
+<li>🎤 Attendance</li><li>📄 Results</li><li>📝 Assignments</li>
+<li>💳 Fees</li><li>🎉 Events</li>
 </ul>
 </div>
 
 <div class="main">
-<div class="header">
-<div><h3>STUDENT DASHBOARD</h3><p>Welcome back, Muskan!</p></div>
-<div class="profile-card">
-<img src="muskan.jpg" onerror="this.src='https://i.pravatar.cc/100?u=muskan'">
-<div><b>Muskan</b><br><small>Class BCA • Saharanpur</small><br><small>📍 Saharanpur, UP 247001</small></div>
+<div class="top">
+<div><b>STUDENT DASHBOARD</b><p>Welcome back, Muskan!</p></div>
+<div class="card" style="display:flex;gap:10px;align-items:center">
+<img src="muskan.jpg" style="width:40px;height:40px;border-radius:50%" onerror="this.src='https://i.pravatar.cc/100?u=muskan'">
+<div><b>Muskan</b><br><small>Photo, Class BCA • Saharanpur</small></div>
 </div>
 </div>
 
 <div class="grid">
-<div class="card"><h3>Upcoming Classes</h3><p>📘 English - 10:00 AM<br><small>Room 102</small></p><br><p>🎓 Maths - 11:30 AM<br><small>Room 201</small></p></div>
-<div class="card"><h3>Today's Assignments</h3><p>📄 History Essay<br><small>Due 5 PM</small></p><br><p>⚙️ Science Project<br><small>Due 8 PM</small></p></div>
-<div class="card"><h3>Weekly Attendance - 92.5%</h3><div class="bar"><div class="fill"></div></div><br><p style="text-align:center;color:#22c55e;font-size:20px"><b>92.5%</b><br><small>Excellent</small></p></div>
-<div class="card"><h3>Calendar - October 2024</h3><p style="font-size:11px">S M T W T F S<br>6 7 8 9 10 11 12<br>13 14 15 16 17 18 19<br><b style="background:#2563eb;color:#fff;padding:2px 5px;border-radius:50%">21</b> 22 23 24 25 26</p></div>
-</div>
+<div class="card"><b>Upcoming Classes</b><br><br>📘 English - 10:00 AM<br><small>Room 102</small><br><br>🎓 Maths - 11:30 AM<br><small>Room 201</small></div>
+<div class="card"><b>Today's Assignments</b><br><br>📄 History Essay<br><small>Due 5 PM</small><br><br>⚙️ Science Project<br><small>Due 8 PM</small></div>
+<div class="card"><b>Notifications</b><br><br>🔔 Fees Due<br><small>10:30 PM</small><br>📅 Exam Schedule<br><small>11:30 PM</small><br>💬 New Message<br><small>new message</small></div>
 
-<h3 style="margin:15px 5px">Current Courses</h3>
-<div class="courses">
-<div class="course" style="background:#93c5fd"><b>Data Structures</b><br><br><small>70% Complete</small></div>
-<div class="course" style="background:#86efac"><b>English Communication</b><br><br><small>45% Complete</small></div>
-<div class="course" style="background:#c4b5fd"><b>Discrete Maths</b><br><br><small>60% Complete</small></div>
-<div class="course" style="background:#fdba74"><b>Computer Fundamentals</b><br><br><small>85% Complete</small></div>
+<div class="card"><b>Weekly Attendance</b><div class="bar"><div class="b1"></div><div class="b2"></div><div class="b3"></div></div><br><small>92.5% Present &nbsp; 5% Absent &nbsp; 2.5% Late</small></div>
+<div class="card"><b>Current Courses</b><br><br>English ██████<br>Maths ██████<br>Science ██████<br>History ██████</div>
+<div class="card"><b>Calendar</b><br>October 2024<br><small>30 31 1 2 3 4 5<br>6 7 8 9 10 11 12<br>13 14 15 16 17 18 19<br>20 <b style="background:#2563eb;color:#fff;padding:2px 6px;border-radius:50%">21</b> 22 23 24 25 26</small></div>
 </div>
-
 </div>
 </body>
 </html>
+
